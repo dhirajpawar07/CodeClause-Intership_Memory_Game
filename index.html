@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Memory Game</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="memory-game">
+    <div class="options">
+      <label for="difficulty">Select Difficulty:</label>
+      <select id="difficulty">
+        <option value="easy">Easy</option>
+        <option value="medium">Medium</option>
+        <option value="hard">Hard</option>
+      </select>
+      <label for="theme">Select Theme:</label>
+      <select id="theme">
+        <option value="emojis">Emojis</option>
+        <option value="animals">Animals</option>
+        <option value="fruits">Fruits</option>
+      </select>
+      <button id="start-btn">Start Game</button>
+    </div>
+    <div class="game-board" id="game-board">
+      <!-- Cards will be dynamically generated here -->
+    </div>
+    <div class="game-info">
+      <p>Time: <span id="timer">0</span>s</p>
+      <p>Score: <span id="score">0</span></p>
+      <button id="reset-btn">Reset</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
